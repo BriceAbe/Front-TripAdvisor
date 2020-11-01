@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/fonts/fonts.css" />
+    <script src="https://kit.fontawesome.com/aba3b7631f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <script src="./assets/js/axios.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <title>TripAdvisor</title>
+  </head>
+  <body cz-shortcut-listen="true" class="">
+    <div class="container-body">
+      <header>
+        <div>
+          <img src="./assets/img/bars-solid.svg" alt="bars" />
+        </div>
+        <div id="logo-input">
+          <img
+            src="./assets/img/Tripadvisor_lockup_horizontal_secondary_registered.svg"
+            alt="logo-tripadvisor"
+            id="logo-tripadvisor"
+          />
+          <input type="text" id="search" />
+        </div>
+        <div id="nav-log">
+          <div>
+            <i class="fas fa-plus-circle"></i>
+            
+            
+            <span >Publier</span>
+           
+          </div>
+          <div>
+            <i class="far fa-bell"></i>
+            <span
+              >Alertes</span
+            >
+          </div>
+          <div>
+            
+            <i class="far fa-heart"></i>
+            
+            <span
+              >Voyages</span
+            >
+          </div>
+          <div>
+            <button id="login">Connectez-vous</button>
+          </div>
+        </div>
+        <div class="hidden_768">
+          <img src="./assets/img/search-solid.svg" alt="search_icon" />
+        </div>
+      </header>
+      <main>
+        <section id="section1">
+          <h1><span>Explorez</span> Paris</h1>
+          <nav>
+            <div>
+              Conseils de voyage
+              <i class="fas fa-flag"></i>
+            </div>
+            <div>
+              Hôtels
+              <i class="fas fa-bed"></i>
+            </div>
+            <div>
+              Locations de vacances
+              <i class="fas fa-home"></i>
+            </div>
+            <div>
+              Activités
+              <i class="fas fa-archway"></i>
+            </div>
+            <div>
+              Restaurants
+              <i class="fas fa-hamburger"></i>
+            </div>
+            <div>
+              Forums de voyage
+              <i class="far fa-comment-alt"></i>
+            </div>
+            <div class="hidden">
+              Vols
+              <i class="fas fa-plane-departure"></i>
+            </div>
+            <div>
+              Plus
+              <i class="fas fa-ellipsis-h"></i>
+            </div>
+          </nav>
+          <div id="pictures">
+            <div>
+              <img src="./assets/img/1.jpg" alt="photo" />
+              <div id="flex">Toutes les photos</div>
+            </div>
+            <div>
+              <img src="./assets/img/2.jpg" alt="photo" /><img
+                src="./assets/img/3.jpg"
+                alt="photo"
+              />
+            </div>
+          </div>
+          <div id="liens">
+            <div>
+              <a href="">Europe</a>
+              &gt;
+              <a href="">France</a>
+              &gt;
+              <a href=""
+                >Ile de France</a
+              >
+              &gt;
+              <a href="">Paris</a>
+            </div>
+            <div>Visiter : Paris</div>
+          </div>
+        </section>
+        <section id="section2">
+          <div>
+            <h2>La Ville Lumière éblouit en tous points</h2>
+            <p>
+              Aucun autre endroit au monde ne fait autant rêver que Paris. La
+              ville séduit par son art, son architecture, sa culture et sa
+              cuisine, mais il y a aussi des merveilles plus discrètes qui
+              n’attendent qu’à être explorées : les ruelles pavées pittoresques,
+              les pâtisseries au coin de la rue et les petits bistrots douillets
+              qui vous invitent à boire un verre de beaujolais. Préparez-vous à
+              vous approprier Paris.
+            </p>
+          </div>
+          <div>
+            <div>
+              <h3>Commencez à organisez Paris</h3>
+              <p>
+                Créez un voyage pour enregistrer et organiser toutes vos idées
+                et les visualiser sur une carte.
+              </p>
+              <button>Créez un voyage</button>
+            </div>
+            <div>
+              <img
+                src="./assets/img/image_trips_card_medium.png"
+                alt="geolocalisation"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section id="section3">
+          <div>
+            <div class="line"></div>
+            <h2>Conseil de Voyage</h2>
+            <div class="line"></div>
+          </div>
+          <div class="mentions">
+<p>Tout Afficher</p>
+          </div>
+            
+
+            <div class="blocBoutton">
+              <button> <img class="iconConseilVoyage" src="./assets/img/conseilVoyage/fact_sheet_best_time_to_visit.svg" alt=""> <p>Meilleure période pour visiter</p> </button>
+              <button> <img class="iconConseilVoyage" src="./assets/img/conseilVoyage/fact_sheet_getting_around.svg" alt=""><p>Se déplacer</p> </button>
+              <button> <img class="iconConseilVoyage" src="./assets/img/conseilVoyage/fact_sheet_local_customs.svg" alt=""><p>Coutumes locales</p> </button>
+              <button> <img class="iconConseilVoyage" src="./assets/img/conseilVoyage/fact_sheet_tips.svg" alt=""><p>Conseils de pros</p> </button>
+            </div>
+
+
+            
+          
+       
+
+          
+
+
+        </section>
+
+        <section id="section4">
+          <div>
+            <div class="line"></div>
+            <h2>Immanquable à Paris</h2>
+            <div class="line"></div>
+          </div>
+
+          <div class="blocImmanquable">
+
+            <div class="texteImmanquable">
+             <h2>Se divertir</h2>
+             <p>Des lieux à voir, des rues à explorer et des expériences emblématiques à Paris.</p>
+            </div>
+           
+
+              <div id="carroussel">
+                <div>
+                  <img
+                    src="./assets/img/carroussel/eiffeltoren.jpg"
+                    alt="toureiffel"
+                  />
+                  <div class="like">
+                    <img src="./assets/img/heart-regular.svg" alt="like" />
+                  </div>
+                  <h4>Tour eiffel</h4>
+                </div>
+                <div>
+                  <img src="./assets/img/carroussel/louvre.jpg" alt="louvre" />
+                  <div class="like">
+                    <img src="./assets/img/heart-regular.svg" alt="like" />
+                  </div>
+                  <h4>Musée du Louvres</h4>
+                </div>
+                <div>
+                  <img
+                    src="./assets/img/carroussel/arc-de-triomphe-at-night.jpg"
+                    alt="acr de Triomphe"
+                  />
+                  <div class="like">
+                    <img src="./assets/img/heart-regular.svg" alt="like" />
+                  </div>
+                  <h4>Arc de Triomphe</h4>
+                </div>
+                <div>
+                  <img
+                    src="./assets/img/carroussel/vue-de-la-cour-d-honneur.jpg"
+                    alt="laverune"
+                  />
+                  <div class="like">
+                    <img src="./assets/img/heart-regular.svg" alt="like" />
+                  </div>
+                  <h4>Musée Rodin</h4>
+                </div>
+                <div>
+                  <img src="./assets/img/carroussel/the-amazingly-detailed.jpg" alt="sjdv" />
+                  <div class="like">
+                    <img src="./assets/img/heart-regular.svg" alt="like" />
+                  </div>
+                  <h4>Cathédrale Notre-Dame de Paris</h4>
+                </div>
+                <div>
+                  <img
+                    src="./assets/img/carroussel/the-bookstore.jpg"
+                    alt="carnon"
+                  />
+                  <div class="like">
+                    <img src="./assets/img/heart-regular.svg" alt="like" />
+                  </div>
+                  <h4>Librairie Shakespeae and Compagny</h4>
+                </div>
+                <div>
+                  <img
+                    src="./assets/img/carroussel/20180601-122841-largejpg.jpg"
+                    alt="grabels"
+                  />
+                  <div class="like">
+                    <img src="./assets/img/heart-regular.svg" alt="like" />
+                  </div>
+                  <h4>Musee d'Orsay</h4>
+                </div>
+                <div>
+                  <img
+                    src="./assets/img/carroussel/basilica-del-sagrado.jpg"
+                    alt="sbdp"
+                  />
+                  <div class="like">
+                    <img src="./assets/img/heart-regular.svg" alt="like" />
+                  </div>
+                  <h4>Basilique du Sacré Coeur de Montmartre</h4>
+                </div>
+              </div>
+
+            
+          
+          </div>
+
+          
+
+
+        </section>
+      </main>
+    </div>
+    <footer>
+      <div class="container-body">
+        <div>
+         
+            <img
+                src="./assets/img/Tripadvisor_logoset_solid_green.svg"
+                alt="minilogo"
+                id="miniLogo"
+              />
+            Made at Le Reacteur by Brice - 2020
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal">
+      <div class="modal-content">
+        <div class="close-modal">
+          <img src="./assets/img/times-solid.svg" alt="cross" id="cross" />
+        </div>
+        <form class="register-form">
+          
+          <img  class ="TripForm" src="./assets/img/imgFormulaire/Tripadvisor_lockup_horizontal_registered.svg" alt="">
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="Prénom"
+            required=""
+          />
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Nom"
+            required=""
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required=""
+          />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Mot de passe"
+            required=""
+          />
+
+          <input type="file">
+          
+          <input type="submit" value="Envoyer" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

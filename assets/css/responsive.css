@@ -1,0 +1,203 @@
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hidden {
+    display: flex;
+  }
+  /* HEADER */
+  #logo-tripadvisor {
+    width: 150px;
+  }
+  #nav-log span {
+    display: none;
+  }
+  #nav-log div button {
+    width: 120px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  /* section 1 */
+  nav {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  nav div {
+    width: 20%;
+    flex: none;
+    height: 30px;
+    margin-bottom: 15px;
+  }
+  nav div:nth-child(7) {
+    margin-right: 15px;
+  }
+  nav div:nth-child(4),
+  nav div:last-child {
+    margin-right: 0;
+  }
+  #pictures {
+    margin-top: 15px;
+  }
+
+  /* section 2 */
+  #section2 {
+    flex-direction: column;
+  }
+  #section2 div:first-child,
+  #section2 div:last-child {
+    width: 100%;
+  }
+  #section2 div:last-child {
+    display: flex;
+    flex-direction: row;
+  }
+  #section2 div:last-child div:first-child {
+    border-radius: 20px 0 0 20px;
+  }
+  #section2 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 20px 20px 0;
+  }
+
+  /* FOOTER */
+  footer {
+    height: 190px;
+  }
+  footer > div {
+    flex-direction: column-reverse;
+  }
+  footer > div > div:first-child {
+    margin-bottom: 20px;
+  }
+  footer select {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  /* GLOBAL */
+  /* .container-body {
+    width: 100%;
+  } */
+  .hidden {
+    display: flex;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  img {
+    object-fit: cover;
+  }
+
+  /* HEADER */
+  header {
+    align-items: center;
+    justify-content: space-between;
+    position: static;
+    /* background-color: red; */
+  }
+  header input,
+  #nav-log {
+    display: none;
+  }
+  #logo-input,
+  #nav-log {
+    width: auto;
+  }
+  #logo-tripadvisor {
+    width: 140px;
+    margin-right: 0;
+  }
+  header > div:first-child,
+  header > div:last-child {
+    width: 20px;
+  }
+
+  /* section 1 */
+  #section1 h1,
+  nav {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  nav {
+    overflow-x: scroll;
+  }
+  nav > div {
+    flex: none;
+    height: 30px;
+  }
+  nav > div > img {
+    margin-left: 10px;
+  }
+  nav > div:nth-child(7) {
+    margin-right: 15px;
+  }
+  #section1 {
+    margin-left: -19px;
+    margin-right: -21px;
+  }
+  #pictures {
+    /* margin-left: -16px; */
+    /* width: 106.4%; */
+    height: 280px;
+    /* margin-right: -200px */
+    background-color: lawngreen;
+  }
+  #pictures div:first-child {
+    width: auto;
+  }
+  #pictures div:first-child img {
+    border-radius: 0;
+  }
+  #pictures div:nth-child(2) {
+    display: none;
+  }
+  #liens {
+    display: none;
+  }
+
+  /* section 2 */
+  #section2 {
+    flex-direction: column;
+  }
+  #section2 div:first-child,
+  #section2 div:last-child {
+    width: 100%;
+  }
+  #section2 div:last-child {
+    display: flex;
+  }
+  #section2 div:last-child div:first-child {
+    border-radius: 20px 20px 0 0;
+  }
+  #section2 img {
+    width: 100%;
+    height: 200px;
+    border-radius: 0 0 20px 20px;
+  }
+
+  /* section 3 */
+  #carroussel > div > img {
+    /* max-width: 600px;
+    flex-shrink: 0;
+    flex: 1;
+    height: 500px; */
+    width: 400px;
+    height: 300px;
+  }
+
+  /* FOOTER */
+  footer {
+    height: 190px;
+  }
+  footer > div {
+    flex-direction: column-reverse;
+  }
+  footer > div > div:first-child {
+    margin-bottom: 20px;
+  }
+}
